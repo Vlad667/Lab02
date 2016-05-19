@@ -1,19 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int main()
-
+#include <locale.h>
+#include<stdlib.h>
+ 
+int main (void)
 {
-	float x, y;
-    printf("x=");
-	scanf("%f" ,&x);
-	y = x * x;
-	printf ("y=%f", y);
+	int a, b, c;
+	printf("Vvedite 3 chicla cherez probel: ");
+	scanf("%d %d %d", &a, &b, &c );
 	
-    printf("\nx=");
-	scanf("%f" ,&x);
-	y = x * x;
-	printf ("y=%f", y);
-system("pause");
+	if ((a > b)&&(a > c)) {
+	printf("\nNaibolshee chislo: %d", a);
+	} else {
+	if ((b > a)&&(b > c)) {
+	printf("\nNaibolshee chislo: %d", b);
+	} else {
+	if ((c > a)&&(c > b)) {
+	printf("\nNaibolshee chislo: %d", c);
+	} else {}
+	}
+	}
+	system("pause");
     return 0;
 }
