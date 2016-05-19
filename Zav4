@@ -1,16 +1,30 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
-int main ()
 
-{
+int main() {
 	int a;
-	printf("a=");
+	
+    printf("Vvedite vremya:");
 	scanf("%d", &a);
-	printf("\n%3.2d\n", a);
-	printf("\n%e\n", a);
-	printf("\n%3.7d\n", a);
+	if ((a >= 5)&&(a <= 10)){
+	printf("\nDobroe utro.");
+	} else {
+	if ((a >= 12)&&(a <= 18)) {
+	printf("\nDortiy den.");
+	} else {
+	if ((a >= 19)&&(a <= 24)){
+	printf("\nDobriy vecher.");
+	} else {
+	if ((a >= 0)&&(a <= 5)) {
+	printf("\nSpokoyniy nochi.");
 	system("pause");
+    }
+	}
+	}
+	}
 	return 0;
 }
+
 
