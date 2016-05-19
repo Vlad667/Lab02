@@ -1,19 +1,29 @@
 #include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-
-int main(int argc, char *argv[]) {
-	double a,b,x;
-	printf("Reshatel uravneniy vida: a*x+b=0 \n");
-	
-	printf("Vvedite a:");
-	scanf("%f", &a);
-	printf("Vvedite b:");
-	scanf("%f", &b);
-	
-	x = - b / a ;
-	
-	printf("x=%f", x); 
-	system("pause");
+#include <locale.h>
+#include<stdlib.h>
+int main() {
+	double a, b, c;
+	printf("Vvedite a=");
+	scanf("%lf", &a);
+	if ((a < 8)&&(a > -5)){
+	printf("a nahoditsa v intervale (-5,8)");
+	} else {
+	printf("a nenahoditsa v intervale (-5,8)");
+	}
+	printf("\n\nVvedite b=");
+	scanf ("%lf", &b);
+	if ((b < 8)&&(b > -5)){
+	printf("b nahoditsa v intervale (-5,8)");
+	}else {
+	printf("b ne nahoditsa v intervale (-5,8)");
+	}
+	printf("\n\nVvedite c=");
+	scanf("%lf", &c);
+	if ((c < 8)&&(c > -5)){
+	printf("c nahoditsa v intervale (-5,8)");
+	}else {
+	printf("c ne nahoditsa v intervale (-5,8)");
+	}
+    system("pause");
 	return 0;
 }
