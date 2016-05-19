@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+	float a;
+	
+    printf("Nomer zadachi:");
+	scanf("%f", &a);
+	if ((a <= 2) && (a >= 1)) {
+		printf("\nZima.");
+	} else {
+	if (a == 12) {
+			printf("\nZima.");
+	} else {
+	if ((a >= 3) && (a <= 5)) {
+				printf("\nVesna.");
+	} else {
+	if ((a >= 6) && (a <= 8)) {
+					printf("\nLeto.");
+	} else {
+	if ((a >= 9) && (a <= 11)) {
+	printf("\nOsen.'");
+	} else {
+	if (a > 12) {
+    printf ("\nOshibka, neverno vveden nomer mesyaca.");
+    }
+    }
+	}
+	}
+	}
+	}
+	return 0;
+}
